@@ -1,0 +1,216 @@
+/* === Reset and Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* === Container === */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* === Headings === */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2b4db0;
+}
+
+/* === Buttons === */
+button {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+  background-color: #3730a3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.back-btn {
+  background-color: #9ca3af;
+  margin-top: 20px;
+}
+
+.back-btn:hover {
+  background-color: #6b7280;
+}
+
+.copy-btn, .delete-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.copy-btn {
+  background-color: #10b981;
+}
+
+.copy-btn:hover {
+  background-color: #059669;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+/* === Welcome Section Buttons === */
+.welcome-buttons {
+  display: flex;
+  flex-direction: row;  /* Change this from column to row for horizontal layout */
+  gap: 20px;            /* Add some space between buttons */
+  align-items: center;  /* Center the buttons vertically within the row */
+  justify-content: center;  /* Align buttons in the center */
+  margin-top: 40px;
+}
+
+
+/* === Form Styling === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  transition: border 0.3s ease;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+/* === Password Toggle === */
+.password-input {
+  position: relative;
+  display: flex;
+}
+
+.password-input input {
+  width: 100%;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* === List Styling === */
+.list-container {
+  margin-top: 20px;
+}
+
+.entry {
+  background: #f9fafb;
+  border-left: 5px solid #4f46e5;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.entry:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.entry-details {
+  margin: 6px 0;
+  word-wrap: break-word;
+}
+
+.timestamp {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+/* === Utility === */
+.hidden {
+  display: none;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  input, button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .entry {
+    padding: 14px;
+  }
+
+  .entry-details {
+    font-size: 14px;
+  }
+
+  .copy-btn, .delete-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .welcome-buttons {
+    gap: 12px;
+  }
+}
