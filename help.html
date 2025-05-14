@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Iron Key Help Center</title>
+  <link rel="stylesheet" href="help.css">
+</head>
+<body>
+  <header>
+    <h1>Help Center</h1>
+  </header>
+
+  <main>
+    <section class="tutorials">
+      <h2>Tutorials</h2>
+      <ol>
+        <li>Setting Up Master Password &amp; PIN</li>
+        <li>Adding a New Password Entry</li>
+        <li>Viewing &amp; Managing Saved Passwords</li>
+        <li>Exporting &amp; Importing Your Data</li>
+      </ol>
+    </section>
+
+    <section class="faqs">
+      <h2>FAQs</h2>
+      <dl>
+        <dt>How do I use my PIN?</dt>
+        <dd>Enter your 4-digit PIN whenever prompted to unlock actions.</dd>
+
+        <dt>How can I view my passwords?</dt>
+        <dd>Tap “See Passwords” and enter your PIN to reveal the list.</dd>
+
+        <dt>How do I change my Master Password?</dt>
+        <dd>Open Settings (🔑), select “Change Master Password,” and follow the prompts.</dd>
+
+        <dt>What if I forget my PIN?</dt>
+        <dd>Use your Master Password in the PIN prompt to reset it from Settings.</dd>
+      </dl>
+    </section>
+
+    <section class="step-by-step">
+      <h2>Step-by-Step Guide</h2>
+      <p>
+        1. On first launch, set your Master Password and 4-digit PIN.<br>
+        2. Tap “Add Password” and fill in the fields.<br>
+        3. Use “See Passwords” to view, copy, or delete entries.<br>
+        4. Export your data via “Export” to back up.<br>
+        5. Import a backup JSON file via “Import.”  
+      </p>
+    </section>
+
+    <!-- New Troubleshooting Section -->
+    <section class="troubleshooting">
+      <h2>Troubleshooting</h2>
+      <dl>
+        <dt>I can’t open a modal window.</dt>
+        <dd>Ensure JavaScript is enabled in your browser, then refresh the page.</dd>
+
+        <dt>My password won’t save.</dt>
+        <dd>Make sure you have set a PIN and entered it correctly when saving.</dd>
+
+        <dt>I forgot my PIN or Master Password.</dt>
+        <dd>Use the “Reset App” button and enter your Master Password to clear all data and start fresh.</dd>
+
+        <dt>Import failed with an error.</dt>
+        <dd>Check that you selected a valid JSON backup and entered the correct Master Password or PIN.</dd>
+      </dl>
+    </section>
+
+    <!-- New Security Tips Section -->
+    <section class="security-tips">
+      <h2>Security Tips</h2>
+      <ul>
+        <li>Use a unique, strong Master Password you don’t use anywhere else.</li>
+        <li>Change your PIN periodically, especially after any suspected breach.</li>
+        <li>Back up your data before making major changes.</li>
+        <li>Keep your browser and device updated with the latest security patches.</li>
+        <li>Log out or clear local storage if you share your device with others.</li>
+      </ul>
+    </section>
+
+    <a href="index.html" class="back-home">← Back to Dashboard</a>
+  </main>
+
+  <footer>
+    <a href="tel:+923320772166">📞 +92 332 0772166</a>
+    <a href="https://instagram.com/waqas_m273" target="_blank">
+      <i class="fab fa-instagram"></i> waqas_m273
+    </a>
+    <span>📍 Gujranwala</span>
+    <a href="help.html">❓ Help Center</a>
+    <div class="footer-buttons">
+      <button id="export-btn">⬆️ Export</button>
+      <button onclick="secureReset()">🔄 Reset App</button>
+      <!-- <button id="import-btn">⬇️ Import</button> -->
+    </div>
+  </footer>
+</body>
+</html>

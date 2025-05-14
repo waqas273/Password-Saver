@@ -1,0 +1,169 @@
+/* Base */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #111;                       /* dark text */
+    background: #f0f4f8;               /* light neutral backdrop */
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+  }
+  
+  /* Section container */
+  section {
+    background: #fff;
+    margin-bottom: 2em;
+    padding: 1.5em 2em;
+    border-left: 6px solid #28a745;    /* green accent */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.6s ease-out forwards;
+  }
+  
+  /* Staggered animation delays */
+  section:nth-of-type(1) { animation-delay: 0.1s; }
+  section:nth-of-type(2) { animation-delay: 0.2s; }
+  section:nth-of-type(3) { animation-delay: 0.3s; }
+  section:nth-of-type(4) { animation-delay: 0.4s; }
+  section:nth-of-type(5) { animation-delay: 0.5s; }
+  
+  /* Section headings */
+  section h2 {
+    margin-top: 0;
+    color: #111;                       /* black heading text */
+    font-size: 1.4em;
+    border-bottom: 2px solid #007bff;  /* blue underline */
+    padding-bottom: 0.3em;
+  }
+  
+  /* Tutorials list */
+  .tutorials ol {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  
+  .tutorials li {
+    margin: 0.5em 0;
+  }
+  
+  /* FAQs */
+  .faqs dl {
+    margin: 0;
+  }
+  
+  .faqs dt {
+    font-weight: 600;
+    margin-top: 1em;
+    color: #0056b3;                    /* dark blue questions */
+  }
+  
+  .faqs dd {
+    margin: 0.3em 0 0.8em 1em;
+    color: #333;
+  }
+  
+  /* Step-by-Step */
+  .step-by-step p {
+    margin: 0.5em 0;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  
+  .step-by-step p br {
+    line-height: 1.8;
+  }
+  
+  /* Troubleshooting (same structure as FAQs) */
+  .troubleshooting dt {
+    font-weight: 600;
+    margin-top: 1em;
+    color: #0056b3;
+  }
+  
+  .troubleshooting dd {
+    margin: 0.3em 0 0.8em 1em;
+    color: #333;
+  }
+  
+  /* Security Tips */
+  .security-tips ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  
+  .security-tips li {
+    margin: 0.5em 0;
+    color: #111;
+  }
+  
+  /* Back to Dashboard link */
+  .back-home {
+    display: inline-block;
+    margin-top: 1em;
+    color: #007bff;                    /* blue link */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .back-home:hover {
+    color: #0056b3;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;                  /* black footer */
+    padding: 1.5em 1em;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  footer a {
+    color: #28a745;                    /* green footer links */
+    text-decoration: none;
+    margin: 0 0.5em;
+    transition: color 0.2s;
+  }
+  
+  footer a:hover {
+    color: #1e7e34;                    /* darker green hover */
+  }
+  
+  .footer-buttons {
+    margin-top: 1em;
+  }
+  
+  .footer-buttons button {
+    background: #28a745;               /* green buttons */
+    border: none;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    margin: 0 0.3em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  .footer-buttons button:hover {
+    background: #218838;               /* darker green hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Animation keyframes */
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
